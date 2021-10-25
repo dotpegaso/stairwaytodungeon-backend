@@ -1,0 +1,30 @@
+{
+  "kind": "collectionType",
+  "collectionName": "players",
+  "info": {
+    "name": "player",
+    "description": "player ID from discord"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "discord_id": {
+      "type": "biginteger"
+    },
+    "username": {
+      "type": "string"
+    },
+    "discriminator": {
+      "type": "integer"
+    },
+    "avatar_hash": {
+      "type": "string"
+    },
+    "email": {
+      "type": "string"
+    }
+  }
+}

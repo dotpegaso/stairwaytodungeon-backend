@@ -1,0 +1,99 @@
+{
+  "kind": "collectionType",
+  "collectionName": "characters",
+  "info": {
+    "name": "character",
+    "description": "character sheets"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "occupation": {
+      "type": "string"
+    },
+    "first_weapon": {
+      "type": "string"
+    },
+    "second_weapon": {
+      "type": "string"
+    },
+    "sub_weapon": {
+      "type": "string"
+    },
+    "strength": {
+      "type": "integer"
+    },
+    "intelligence": {
+      "type": "integer"
+    },
+    "wisdom": {
+      "type": "integer"
+    },
+    "dexterity": {
+      "type": "integer"
+    },
+    "constituition": {
+      "type": "integer"
+    },
+    "charisma": {
+      "type": "integer"
+    },
+    "armor_class": {
+      "type": "integer"
+    },
+    "lucky_tokens": {
+      "type": "integer",
+      "default": 0
+    },
+    "status": {
+      "type": "string",
+      "default": "alive"
+    },
+    "class": {
+      "type": "string"
+    },
+    "experience_crystals": {
+      "type": "integer",
+      "default": 0
+    },
+    "total_hp": {
+      "type": "integer"
+    },
+    "current_hp": {
+      "type": "integer"
+    },
+    "player": {
+      "type": "string"
+    },
+    "player_id": {
+      "type": "string"
+    },
+    "item_1": {
+      "type": "string"
+    },
+    "item_2": {
+      "type": "string"
+    },
+    "item_3": {
+      "type": "string"
+    },
+    "item_4": {
+      "type": "string"
+    },
+    "item_5": {
+      "type": "string"
+    },
+    "gold_pieces": {
+      "type": "integer"
+    },
+    "motivation": {
+      "type": "string"
+    }
+  }
+}
