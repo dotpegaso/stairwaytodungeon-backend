@@ -1,6 +1,4 @@
 "use strict";
-const socketIO = require("socket.io");
-const server = process.env.REACT_APP_SOCKET_ENDPOINT;
 
 /**
  * An asynchronous bootstrap function that runs before
@@ -13,6 +11,9 @@ const server = process.env.REACT_APP_SOCKET_ENDPOINT;
  */
 
 module.exports = () => {
+  const socketIO = require("socket.io");
+  const server = process.env.REACT_APP_SOCKET_ENDPOINT;
+
   const io = socketIO(server, {
     cors: {
       origin: "*",
