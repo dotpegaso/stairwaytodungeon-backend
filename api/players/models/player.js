@@ -5,13 +5,4 @@
  * to customize this model
  */
 
-module.exports = {
-  lifecycles: {
-    // Called before an entry is created
-    beforeCreate() {},
-    // Called after an entry is created
-    async afterCreate() {
-      await strapi.emitToAllUsers("players");
-    },
-  },
-};
+module.exports = {};

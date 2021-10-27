@@ -7,10 +7,8 @@
 
 module.exports = {
   lifecycles: {
-    // Called before an entry is created
-    beforeCreate() {},
-    // Called after an entry is created
-    async afterCreate() {
+    // Called after an entry is updated
+    async afterUpdate() {
       await strapi.io.emit("characters");
     },
   },
