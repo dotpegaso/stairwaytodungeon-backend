@@ -11,7 +11,7 @@ module.exports = {
     beforeCreate() {},
     // Called after an entry is created
     async afterCreate() {
-      await strapi.emitToAllUsers("characters");
+      await strapi.emit("characters");
     },
   },
 };

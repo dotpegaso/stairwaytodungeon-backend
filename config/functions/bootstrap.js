@@ -11,19 +11,8 @@
  */
 
 module.exports = () => {
-  const socketIO = require("socket.io");
-  const server = process.env.REACT_APP_SOCKET_ENDPOINT;
-
-  const io = socketIO(server, {
-    cors: {
-      origin: "*",
-    },
-  });
-
-  io.on("connection", (socket) => {
-    console.log("a user connected");
-    socket.on("disconnect", () => console.log("a user disconnected"));
-  });
-
-  strapi.io = io;
+  const { io } = require("socket.io-client");
+  const socket = io("https://stairwaytodungeon-socket.herokuapp.com");
+  socket.emit("characters");
+  strapi.io = socket;
 };
