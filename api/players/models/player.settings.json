@@ -12,19 +12,24 @@
   },
   "attributes": {
     "discord_id": {
-      "type": "biginteger"
+      "type": "biginteger",
+      "required": false,
+      "unique": false
     },
     "username": {
-      "type": "string"
+      "type": "string",
+      "required": false,
+      "unique": false
     },
     "discriminator": {
-      "type": "integer"
+      "type": "integer",
+      "required": false,
+      "unique": false
     },
     "avatar_hash": {
-      "type": "string"
-    },
-    "email": {
-      "type": "string"
+      "type": "string",
+      "required": false,
+      "unique": false
     }
   }
 }

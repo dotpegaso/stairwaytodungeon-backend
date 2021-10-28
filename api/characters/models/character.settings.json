@@ -12,88 +12,123 @@
   },
   "attributes": {
     "name": {
-      "type": "string"
+      "type": "string",
+      "required": false,
+      "unique": false
     },
     "occupation": {
-      "type": "string"
+      "type": "string",
+      "required": false,
+      "unique": false
     },
-    "first_weapon": {
-      "type": "string"
-    },
-    "second_weapon": {
-      "type": "string"
-    },
-    "sub_weapon": {
-      "type": "string"
+    "weapons": {
+      "type": "json",
+      "required": false,
+      "unique": false
     },
     "strength": {
-      "type": "integer"
+      "type": "integer",
+      "required": false,
+      "unique": false
     },
     "intelligence": {
-      "type": "integer"
+      "type": "integer",
+      "required": false,
+      "unique": false
     },
     "wisdom": {
-      "type": "integer"
+      "type": "integer",
+      "required": false,
+      "unique": false
     },
     "dexterity": {
-      "type": "integer"
+      "type": "integer",
+      "required": false,
+      "unique": false
     },
     "constituition": {
-      "type": "integer"
+      "type": "integer",
+      "required": false,
+      "unique": false
     },
     "charisma": {
-      "type": "integer"
+      "type": "integer",
+      "required": false,
+      "unique": false
     },
     "armor_class": {
-      "type": "integer"
+      "type": "integer",
+      "required": false,
+      "unique": false
     },
     "lucky_tokens": {
       "type": "integer",
-      "default": 0
+      "default": 0,
+      "required": false,
+      "unique": false
     },
     "status": {
       "type": "string",
-      "default": "alive"
+      "default": "alive",
+      "required": false,
+      "unique": false
+    },
+    "isAlive": {
+      "type": "boolean",
+      "default": true,
+      "required": false,
+      "unique": false
     },
     "class": {
-      "type": "string"
+      "type": "string",
+      "required": false,
+      "unique": false
     },
     "experience_crystals": {
       "type": "integer",
-      "default": 0
+      "default": 0,
+      "required": false,
+      "unique": false
     },
     "total_hp": {
-      "type": "integer"
+      "type": "integer",
+      "required": false,
+      "unique": false
     },
     "current_hp": {
-      "type": "integer"
+      "type": "integer",
+      "required": false,
+      "unique": false
     },
     "player": {
-      "type": "string"
+      "type": "string",
+      "required": false,
+      "unique": false
     },
     "player_id": {
-      "type": "string"
+      "type": "string",
+      "required": false,
+      "unique": false
     },
-    "item_1": {
-      "type": "string"
+    "items": {
+      "type": "json",
+      "required": false,
+      "unique": false
     },
-    "item_2": {
-      "type": "string"
-    },
-    "item_3": {
-      "type": "string"
-    },
-    "item_4": {
-      "type": "string"
-    },
-    "item_5": {
-      "type": "string"
+    "grimoire": {
+      "type": "json",
+      "required": false,
+      "unique": false
     },
     "gold_pieces": {
-      "type": "integer"
+      "type": "integer",
+      "required": false,
+      "unique": false
     },
     "motivation": {
-      "type": "string"
+      "type": "string",
+      "required": false,
+      "unique": false
     }
   }
 }
