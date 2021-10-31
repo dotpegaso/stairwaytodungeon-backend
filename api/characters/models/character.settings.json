@@ -16,13 +16,13 @@
       "required": false,
       "unique": false
     },
-    "occupation": {
+    "class": {
       "type": "string",
       "required": false,
       "unique": false
     },
-    "weapons": {
-      "type": "json",
+    "occupation": {
+      "type": "string",
       "required": false,
       "unique": false
     },
@@ -61,35 +61,6 @@
       "required": false,
       "unique": false
     },
-    "lucky_tokens": {
-      "type": "integer",
-      "default": 0,
-      "required": false,
-      "unique": false
-    },
-    "status": {
-      "type": "string",
-      "default": "alive",
-      "required": false,
-      "unique": false
-    },
-    "isAlive": {
-      "type": "boolean",
-      "default": true,
-      "required": false,
-      "unique": false
-    },
-    "class": {
-      "type": "string",
-      "required": false,
-      "unique": false
-    },
-    "experience_crystals": {
-      "type": "integer",
-      "default": 0,
-      "required": false,
-      "unique": false
-    },
     "total_hp": {
       "type": "integer",
       "required": false,
@@ -100,12 +71,30 @@
       "required": false,
       "unique": false
     },
-    "player": {
-      "type": "string",
+    "lucky_tokens": {
+      "type": "integer",
+      "default": 0,
       "required": false,
       "unique": false
     },
-    "player_id": {
+    "experience_crystals": {
+      "type": "integer",
+      "default": 0,
+      "required": false,
+      "unique": false
+    },
+    "gold_pieces": {
+      "type": "integer",
+      "required": false,
+      "unique": false
+    },
+    "isAlive": {
+      "type": "boolean",
+      "default": true,
+      "required": false,
+      "unique": false
+    },
+    "discord_id": {
       "type": "string",
       "required": false,
       "unique": false
@@ -115,18 +104,18 @@
       "required": false,
       "unique": false
     },
+    "weapons": {
+      "type": "json",
+      "required": false,
+      "unique": false
+    },
     "grimoire": {
       "type": "json",
       "required": false,
       "unique": false
     },
-    "gold_pieces": {
-      "type": "integer",
-      "required": false,
-      "unique": false
-    },
-    "motivation": {
-      "type": "string",
+    "notes": {
+      "type": "richtext",
       "required": false,
       "unique": false
     }
