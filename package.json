@@ -12,6 +12,7 @@
   },
   "dependencies": {
     "knex": "0.21.18",
+    "lodash": "^4.17.21",
     "pg": "^8.7.1",
     "pg-connection-string": "^2.5.0",
     "socket.io": "^4.3.1",
