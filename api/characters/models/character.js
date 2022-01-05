@@ -8,8 +8,8 @@
 module.exports = {
   lifecycles: {
     // Called after an entry is updated
-    async afterUpdate() {
-      await strapi.io.emit("characters");
+    async afterUpdate(entry) {
+      await strapi.io.emit("characters", entry);
     },
   },
 };
