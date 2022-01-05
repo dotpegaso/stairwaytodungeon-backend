@@ -8,6 +8,7 @@ const { sanitizeEntity } = require("strapi-utils");
 
 module.exports = {
   update: async (ctx) => {
+    console.log("CTX UPDATE", ctx);
     const { id } = ctx.params;
     const entity = await strapi.services.sheet.update({ id }, ctx.request.body);
 
